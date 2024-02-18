@@ -17,8 +17,26 @@
             padding: 20px;
             text-align: center;
         }
-        h1 {
-            margin: 0;
+        nav {
+            background-color: #333;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         .container {
             max-width: 800px;
@@ -43,10 +61,26 @@
     <header>
         <h1>GitHub Web Sitesi</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <h2>Hoş Geldiniz!</h2>
-        <p>Bu, GitHub üzerindeki web sitenize hoş geldiniz. Burası web sitenizin ana sayfası olabilir.</p>
-        <p>Bu sayfada dilediğiniz içeriği paylaşabilirsiniz.</p>
+        <section id="anasayfa">
+            <h2>Anasayfa</h2>
+            <p>Bu, GitHub üzerindeki web sitenizin anasayfasıdır. Burası web sitenizin ilk ziyaret edilen sayfası olabilir.</p>
+        </section>
+        <section id="hakkimda">
+            <h2>Hakkımda</h2>
+            <p>Bu bölümde kendinizle ilgili bilgileri paylaşabilirsiniz.</p>
+        </section>
+        <section id="iletisim">
+            <h2>İletişim</h2>
+            <p>Bu bölümde ziyaretçilerinizin sizinle iletişime geçebileceği bilgileri sağlayabilirsiniz.</p>
+        </section>
     </div>
     <footer>
         <p>&copy; 2024 GitHub Web Sitesi - Mehmet Kara</p>
